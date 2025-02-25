@@ -1,118 +1,82 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Bonjour 👋",
+    "description": " En tant que psychologue criminologue, j’ai toujours été animée par l’idée que toute personne peut se réinventer si elle bénéficie d’un accompagnement bienveillant et adapté. Mon parcours m’a permis de développer une approche centrée sur l’humain : écouter, évaluer, soutenir et agir au bon moment. Les expériences auprès d’adolescents en difficulté m’ont montré l’importance de la relation de confiance et de la compréhension de soi pour amorcer le changement. À côté de ça, je suis passionnée par l’ouverture d’esprit, la spiritualité et la place que les animaux peuvent occuper dans la thérapie. Chaque nouveau défi est pour moi l’opportunité d’apprendre, de grandir et de contribuer à un mieux-être collectif.",
+    "section_name": {
+      "about": "Qui suis-je ?",
+      "projects": " Contributions professionnelles ",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "L’Entre-Toit (Montréal) – Intervenante communautaire / Agente de surveillance",
+      "startDate": "Février - Juillet 2024",
+      "description": "Accompagnement de personnes souffrant de problèmes de santé mentale sous sentence judiciaire provinciale. Soutien psychosocial, évaluation des besoins et collaboration interdisciplinaire pour faciliter leur réinsertion sociale.",
+      "images": [],
+      "url": "",
+      "technologies": []
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Espace La Traversée (Montréal) – Intervenante clinique",
+      "startDate": "Août - Septembre 2024",
+      "description": "Soutien de personnes en situation de handicap intellectuel au quotidien. Animation d’ateliers d'autonomisation, mise en place d’outils d’accompagnement et rédaction de rapports d’intervention.",
+      "images": [],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Établissement pénitentiaire de Lantin (SPS) – Psychologue stagiaire",
+      "startDate": "Février - Juillet 2022",
+      "description": "Intervention auprès de personnes incarcérées souffrant de troubles psychologiques. Contribuer à leur réinsertion sociale, proposer des évaluations et participer à l’élaboration de plans de soutien adaptés.",
+      "images": [],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Hôpital Petit Bourgogne – Unité pédopsychiatrique «Les cyprès» – Psychologue stagiaire",
+      "startDate": "Septembre - Février 2021",
+      "description": "Accompagnement d’adolescents en difficulté. Participation à l’évaluation clinique, aux interventions thérapeutiques et au travail en équipe multidisciplinaire, avec un focus sur la gestion de crises et le soutien psychologique.",
+      "images": [],
+      "url": "",
+      "technologies": []
+    }
+  ],
+  "experience": [
+    {
+      "company": "DefOpenSource",
+      "title": "Front-End Developer",
+      "years": "10.2019 - present",
+      "mainTech": [
+        "Angular 8/9/10"
+      ],
+      "technologies": [
+        "REST API",
+        "RxJS",
+        "JavaScript",
+        "Bootstrap",
+        "MDBootstrap",
+        "EF Core",
+        ".NET Core",
+        "SignalR",
+        "Angular Material"
+      ]
+    },
+    {
+      "company": "Serros Solutions",
+      "title": "Intern",
+      "years": "01.2018 - 09.2019",
+      "mainTech": [
+        "Angular 7/8"
+      ],
+      "technologies": [
+        "RxJS",
+        "Django",
+        "PHP",
+        "JavaScript",
+        "DHTMLX Gantt"
+      ]
+    }
+  ]
+}
