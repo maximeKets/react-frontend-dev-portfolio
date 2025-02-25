@@ -1,68 +1,95 @@
 {
-    "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
-        }
-      ],
-      "image": "ProfiliLoveIMG.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Laura Deloge",
+    "phone": "123456789",
+    "email": "laura@exemple.com",
+    "titles": [
+      "Psychologue Criminologue",
+      "Intervenante Psychosociale"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com",
+        "class": "fab fa-instagram"
+      }
+    ],
+    "image": "ProfiliLoveIMG.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Écoute active",
+        "iconName": "record_voice_over",
+        "level": "90"
+      },
+      {
+        "name": "Criminologique",
+        "iconName": "balance",
+        "level": "90"
+      },
+      {
+        "name": "Psychosociale",
+        "iconName": "psychology",
+        "level": "90"
+      },
+      {
+        "name": "Reporting",
+        "iconName": "edit_note",
+        "level": "90"
+      },
+      {
+        "name": "Empathie",
+        "iconName": "diversity_1",
+        "level": "90"
+      },
+      {
+        "name": "Réinsertion",
+        "iconName": "group_add",
+        "level": "90"
+      },
+      {
+        "name": "Sensibilité",
+        "iconName": "volunteer_activism",
+        "level": "90"
+      },
+      {
+        "name": "Conscience",
+        "iconName": "self_improvement",
+        "level": "90"
+      }
+    ],
+    "cards": [
+      {
+        "title": "Boris Cyrulnik",
+        "img": "images/boris_2.jpg",
+        "text": "Ses travaux sur la résilience et l’estime de soi sont une base essentielle pour accompagner la souffrance humaine."
+      },
+      {
+        "title": "Don Miguel Ruiz",
+        "img": "images/penit.jpg",
+        "text": "Les accords toltèques et l’importance de l’intention, de la parole et de l’énergie dans l’évolution personnelle."
+      },
+      {
+        "title": "Christophe André",
+        "img": "images/penit.jpg",
+        "text": "Sa réflexion sur l’estime de soi et la méditation de pleine conscience pour mieux gérer les difficultés du quotidien."
+      },
+      {
+        "title": "Carl Gustav Jung",
+        "img": "images/penit.jpg",
+        "text": "Son approche de l’inconscient collectif et des archétypes nourrit une compréhension profonde du comportement humain."
+      },
+      {
+        "title": "Spiritualité & énergie",
+        "img": "images/penit.jpg",
+        "text": "La notion d’énergie, de connexion à soi et de synchronicité pour aider les individus à se (re)trouver."
+      }
+    ]
   }
+}
