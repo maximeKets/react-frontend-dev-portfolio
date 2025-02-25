@@ -7,7 +7,7 @@
       "projects": " Contributions professionnelles ",
       "skills": "Compétences",
       "inspirations": "Inspirations",
-      "experience": "Experience"
+      "experience": "Éducation"
     }
   },
   "projects": [
@@ -46,38 +46,32 @@
   ],
   "experience": [
     {
-      "company": "DefOpenSource",
-      "title": "Front-End Developer",
-      "years": "10.2019 - present",
+      "company": "Université de Liège (ULiège)",
+      "title": "Master en Psychologie (orientation délinquance et toxicomanie)",
+      "years": "2015 - 2023",
       "mainTech": [
-        "Angular 8/9/10"
+        "Psychologie clinique",
+        "Intervention en délinquance"
       ],
       "technologies": [
-        "REST API",
-        "RxJS",
-        "JavaScript",
-        "Bootstrap",
-        "MDBootstrap",
-        "EF Core",
-        ".NET Core",
-        "SignalR",
-        "Angular Material"
+        "Méthodologie de la recherche",
+        "Évaluation psycho-légale",
+        "Gestion de projet académique",
+        "Rédaction de mémoire"
       ]
     },
     {
-      "company": "Serros Solutions",
-      "title": "Intern",
-      "years": "01.2018 - 09.2019",
+      "company": "Université de Liège (ULiège)",
+      "title": "Master en Criminologie",
+      "years": "2018 - 2021",
       "mainTech": [
-        "Angular 7/8"
+        "Analyse Criminologique"
       ],
       "technologies": [
-        "RxJS",
-        "Django",
-        "PHP",
-        "JavaScript",
-        "DHTMLX Gantt"
+        "Psychologie judiciaire",
+        "Rédaction de rapports d’expertise",
+        "Approche interdisciplinaire",
+        "Évaluation du risque"
       ]
     }
-  ]
-}
+  ]}

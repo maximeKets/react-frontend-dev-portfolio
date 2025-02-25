@@ -2,35 +2,45 @@ import React, { Component } from "react";
 
 class Footer extends Component {
   render() {
+    let name, phone, email;
+
+    // Récupérer les données depuis props
     if (this.props.sharedBasicInfo) {
-      var networks = this.props.sharedBasicInfo.social.map(function (network) {
-        return (
-          <span key={network.name} className="m-4">
-            <a href={network.url} target="_blank" rel="noopener noreferrer">
-              <i className={network.class}></i>
-            </a>
-          </span>
-        );
-      });
+      name = this.props.sharedBasicInfo.name;
+      phone = this.props.sharedBasicInfo.phone; // Par ex. "123456789"
+      email = this.props.sharedBasicInfo.email; // Par ex. "contact@exemple.com"
     }
 
     return (
-      <footer>
-        <div className="col-md-12">
-          <div className="social-links">{networks}</div>
+        <footer>
+          <div className="col-md-12">
+            {/* Section liens (ici téléphone et email) */}
+            <div className="social-links">
+            <span className="m-4">
+              {/* Lien tel */}
+              <a href={phone ? `tel:${phone}` : "#"}>
+                <i className="fa fa-phone"></i>
+              </a>
+            </span>
+              <span className="m-4">
+              {/* Lien mailto */}
+                <a href={email ? `mailto:${email}` : "#"}>
+                <i className="fa fa-envelope"></i>
+              </a>
+            </span>
+            </div>
 
-          <div className="copyright py-4 text-center">
-            <div className="container">
-              <small>
-                Copyright &copy;{" "}
-                {this.props.sharedBasicInfo
-                  ? this.props.sharedBasicInfo.name
-                  : "???"}
-              </small>
+            {/* Section Copyright */}
+            <div className="copyright py-4 text-center">
+              <div className="container">
+                <small>
+                  Copyright &copy;{" "}
+                  {name ? name : "Inconnu"}
+                </small>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
     );
   }
 }
