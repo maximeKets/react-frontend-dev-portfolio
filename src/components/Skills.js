@@ -1,27 +1,20 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 class Skills extends Component {
     render() {
-        let sectionName, skills, cards;
+        let sectionNameSkill, skills, cards, sectionNameInspiration;
 
-        // Vérifier la disponibilité des données
         if (this.props.sharedSkills && this.props.resumeBasicInfo) {
-            // Récupération du nom de section
-            sectionName = this.props.resumeBasicInfo.section_name.skills;
-
-            // 1) Mapper les "icons" (compétences)
+            sectionNameSkill = this.props.resumeBasicInfo.section_name.skills;
+            sectionNameInspiration = this.props.resumeBasicInfo.section_name.inspirations;
             skills = this.props.sharedSkills.icons.map((skill, i) => {
                 return (
                     <li className="list-inline-item mx-3" key={i}>
-                        <div className="text-center skills-tile">
-              <span className="material-icons" style={{ fontSize: "220%" }}>
-                {skill.iconName}
-              </span>
-
-                            <p
-                                className="text-center"
-                                style={{ fontSize: "60%", marginTop: "4px" }}
-                            >
+                        <div className="text-center skills-tile ">
+                            <span className="material-icons" style={{fontSize: "220%"}}>
+                                {skill.iconName}
+                            </span>
+                            <p className="text-center" style={{fontSize: "60%", marginTop: "4px"}}>
                                 {skill.name}
                             </p>
                         </div>
@@ -29,23 +22,18 @@ class Skills extends Component {
                 );
             });
 
-            // 2) Mapper les "cards" (si elles existent)
             if (this.props.sharedSkills.cards) {
                 cards = this.props.sharedSkills.cards.map((card, index) => {
                     return (
-                        <div className="col-md-4 mb-4" key={index}>
+                        <li className="list-inline-item mx-3 mb-4" key={index}>
                             <div className="card" style={{ width: "18rem" }}>
-                                <img
-                                    className="card-img-top"
-                                    src={card.img}
-                                    alt="Card illustration"
-                                />
+                                <img className="card-img-top" src={card.img} alt=""/>
                                 <div className="card-body">
-                                    <h5 className="card-title">{card.title}</h5>
-                                    <p className="card-text">{card.text}</p>
+                                    <h4 className="card-title text-dark ">{card.title}</h4>
+                                    <p className="card-text text-dark ">{card.text}</p>
                                 </div>
                             </div>
-                        </div>
+                        </li>
                     );
                 });
             }
@@ -56,21 +44,23 @@ class Skills extends Component {
                 <div className="col-md-12">
                     <div className="col-md-12">
                         <h1 className="section-title">
-                            <span className="text-white">{sectionName}</span>
+                            <span className="text-white">{sectionNameSkill}</span>
                         </h1>
                     </div>
-
 
                     <div className="col-md-12 text-center">
                         <ul className="list-inline mx-auto skill-icon">{skills}</ul>
                     </div>
 
+                    <div className="col-md-12">
+                        <h1 className="section-title">
+                            <span className="text-white">{sectionNameInspiration}</span>
+                        </h1>
+                    </div>
 
-                    {cards && (
-                        <div className="row justify-content-center mt-4">
-                            {cards}
-                        </div>
-                    )}
+                    <div className="col-md-12 text-center">
+                        <ul className="list-inline mx-auto ">{cards}</ul>
+                    </div>
                 </div>
             </section>
         );

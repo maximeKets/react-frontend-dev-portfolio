@@ -25,70 +25,67 @@
     "icons": [
       {
         "name": "Écoute active",
-        "iconName": "record_voice_over",
-        "level": "90"
+        "iconName": "record_voice_over"
       },
       {
         "name": "Criminologique",
-        "iconName": "balance",
-        "level": "90"
+        "iconName": "balance"
       },
       {
         "name": "Psychosociale",
-        "iconName": "psychology",
-        "level": "90"
+        "iconName": "psychology"
       },
       {
         "name": "Reporting",
-        "iconName": "edit_note",
-        "level": "90"
+        "iconName": "edit_note"
       },
       {
         "name": "Empathie",
-        "iconName": "diversity_1",
-        "level": "90"
+        "iconName": "diversity_1"
       },
       {
         "name": "Réinsertion",
-        "iconName": "group_add",
-        "level": "90"
+        "iconName": "group_add"
       },
       {
         "name": "Sensibilité",
-        "iconName": "volunteer_activism",
-        "level": "90"
+        "iconName": "volunteer_activism"
       },
       {
         "name": "Conscience",
-        "iconName": "self_improvement",
-        "level": "90"
+        "iconName": "self_improvement"
       }
     ],
     "cards": [
       {
         "title": "Boris Cyrulnik",
-        "img": "images/boris_2.jpg",
+        "img": "images/cards/Boris_Cyrulnik.jpg",
         "text": "Ses travaux sur la résilience et l’estime de soi sont une base essentielle pour accompagner la souffrance humaine."
       },
       {
         "title": "Don Miguel Ruiz",
-        "img": "images/penit.jpg",
+        "img": "images/cards/Don_Miguel_Ruiz.jpg",
         "text": "Les accords toltèques et l’importance de l’intention, de la parole et de l’énergie dans l’évolution personnelle."
       },
       {
         "title": "Christophe André",
-        "img": "images/penit.jpg",
+        "img": "images/cards/Christophe_Andree.jpg",
         "text": "Sa réflexion sur l’estime de soi et la méditation de pleine conscience pour mieux gérer les difficultés du quotidien."
       },
       {
         "title": "Carl Gustav Jung",
-        "img": "images/penit.jpg",
+        "img": "images/cards/Carl_Gustav_Jung.jpg",
         "text": "Son approche de l’inconscient collectif et des archétypes nourrit une compréhension profonde du comportement humain."
       },
       {
-        "title": "Spiritualité & énergie",
-        "img": "images/penit.jpg",
-        "text": "La notion d’énergie, de connexion à soi et de synchronicité pour aider les individus à se (re)trouver."
+        "title": "Deepak Chopra",
+        "img": "images/cards/Deepak_Chopra.jpg",
+        "text": "Il allie l’ayurvéda et le pouvoir de l’esprit pour favoriser la guérison et le bien-être global."
+      },
+      {
+        "title": "Michaël Dumas",
+        "img": "images/cards/michael_dumas.jpg",
+        "text": "Il explore la psychologie transpersonnelle comme moteur de réinsertion et d’évolution personnelle."
       }
     ]
   }
