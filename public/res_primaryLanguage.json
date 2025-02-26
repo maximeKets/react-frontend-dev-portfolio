@@ -12,34 +12,47 @@
   },
   "projects": [
     {
-      "title": "L’Entre-Toit (Montréal) – Intervenante communautaire / Agente de surveillance",
-      "startDate": "Février - Juillet 2024",
-      "description": "Accompagnement de personnes souffrant de problèmes de santé mentale sous sentence judiciaire provinciale. Soutien psychosocial, évaluation des besoins et collaboration interdisciplinaire pour faciliter leur réinsertion sociale.",
-      "images": [],
+      "title": "Intervenante communautaire",
+      "startDate": "2024",
+      "description": "L’Entre-Toit (Montréal) – Accompagnement de personnes souffrant de problèmes de santé mentale sous sentence judiciaire provinciale. Soutien psychosocial, évaluation des besoins et collaboration interdisciplinaire pour faciliter leur réinsertion sociale.",
+      "images": [
+        "images/portfolio/entre_toit/entre_toit.jpg",
+        "images/portfolio/entre_toit/entre_toit_2.jpeg"
+
+      ],
       "url": "",
       "technologies": []
     },
     {
-      "title": "Espace La Traversée (Montréal) – Intervenante clinique",
-      "startDate": "Août - Septembre 2024",
-      "description": "Soutien de personnes en situation de handicap intellectuel au quotidien. Animation d’ateliers d'autonomisation, mise en place d’outils d’accompagnement et rédaction de rapports d’intervention.",
-      "images": [],
+      "title": "Intervenante clinique",
+      "startDate": "2024",
+      "description": "Espace La Traversée (Montréal) – Soutien de personnes en situation de handicap intellectuel au quotidien. Animation d’ateliers d'autonomisation, mise en place d’outils d’accompagnement et rédaction de rapports d’intervention.",
+      "images": [
+        "images/portfolio/traverse/traverse.webp",
+        "images/portfolio/traverse/traverse_2.webp"
+      ],
       "url": "",
       "technologies": []
     },
     {
-      "title": "Établissement pénitentiaire de Lantin (SPS) – Psychologue stagiaire",
-      "startDate": "Février - Juillet 2022",
-      "description": "Intervention auprès de personnes incarcérées souffrant de troubles psychologiques. Contribuer à leur réinsertion sociale, proposer des évaluations et participer à l’élaboration de plans de soutien adaptés.",
-      "images": [],
+      "title": "Psychologue stagiaire",
+      "startDate": "2022",
+      "description": "Établissement pénitentiaire de Lantin (SPS) – Intervention auprès de personnes incarcérées souffrant de troubles psychologiques. Contribuer à leur réinsertion sociale, proposer des évaluations et participer à l’élaboration de plans de soutien adaptés.",
+      "images": [
+        "images/portfolio/penitentiaire/Intervention.webp",
+        "images/portfolio/penitentiaire/intervention_2.webp"
+      ],
       "url": "",
       "technologies": []
     },
     {
-      "title": "Hôpital Petit Bourgogne – Unité pédopsychiatrique «Les cyprès» – Psychologue stagiaire",
-      "startDate": "Septembre - Février 2021",
-      "description": "Accompagnement d’adolescents en difficulté. Participation à l’évaluation clinique, aux interventions thérapeutiques et au travail en équipe multidisciplinaire, avec un focus sur la gestion de crises et le soutien psychologique.",
-      "images": ["images/portfolio/traverse/traverse.webp"],
+      "title": "Psychologue stagiaire",
+      "startDate": "2021",
+      "description": "Hôpital Petit Bourgogne – Unité pédopsychiatrique «Les cyprès» – Accompagnement d’adolescents en difficulté. Participation à l’évaluation clinique, aux interventions thérapeutiques et au travail en équipe multidisciplinaire, avec un focus sur la gestion de crises et le soutien psychologique.",
+      "images": [
+        "images/portfolio/hopital/hopital.webp",
+        "images/portfolio/hopital/hopital_2.webp"
+      ],
       "url": "",
       "technologies": []
     }
