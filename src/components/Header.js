@@ -1,98 +1,125 @@
-import React, { Component } from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 
-class Header extends Component {
-  titles = [];
+function Header({sharedData}) {
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [titles, setTitles] = useState([]);
 
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
-  }
+    useEffect(() => {
+        // Charger le thème depuis localStorage
+        const theme = window.localStorage.getItem("theme") || "light";
+        setIsDarkTheme(theme === "dark");
+        document.body.setAttribute("data-theme", theme);
+    }, []);
 
-  onThemeSwitchChange(checked) {
-    this.setState({ checked });
-    this.setTheme();
-  }
+    useEffect(() => {
+        // Construire les steps pour Typical
+        if (sharedData && sharedData.titles) {
+            const newTitles = sharedData.titles.map(x => [x.toUpperCase(), 1500]).flat();
+            setTitles(newTitles);
+        }
+    }, [sharedData]);
 
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
-      body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
-    body.setAttribute(dataThemeAttribute, newTheme);
-  }
+    const onThemeSwitchChange = checked => {
+        setIsDarkTheme(checked);
+        applyTheme(checked);
+    };
 
-  render() {
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
-    }
+    const applyTheme = useCallback((checked) => {
+        const newTheme = checked ? "dark" : "light";
+        document.body.setAttribute("data-theme", newTheme);
+        window.localStorage.setItem("theme", newTheme);
+    }, []);
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+    const name = sharedData?.name || "";
 
     return (
         <header id="home" className="full-height">
-        <div className="row aligner" style={{height: '100%'}}>
-          <div className="col-md-12">
-            <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
-              <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-              </h1>
-              <div className="title-container">
-                <HeaderTitleTypeAnimation />
-              </div>
-              <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
-                offColor="#baaa80"
-                onColor="#353535"
-                className="react-switch mx-auto"
-                width={90}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:owl"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "20px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              />
+            {/* Switch de thème */}
+            <div className="theme-switch-container">
+                <Switch
+                    checked={isDarkTheme}
+                    onChange={onThemeSwitchChange}
+                    offColor="#baaa80"
+                    onColor="#353535"
+                    className="react-switch"
+                    width={90}
+                    height={40}
+                    uncheckedIcon={
+                        <span
+                            className="iconify"
+                            data-icon="twemoji:owl"
+                            data-inline="false"
+                            style={{
+                                display: "block",
+                                height: "100%",
+                                fontSize: 25,
+                                textAlign: "end",
+                                marginLeft: "20px",
+                                color: "#353239"
+                            }}
+                        />
+                    }
+                    checkedIcon={
+                        <span
+                            className="iconify"
+                            data-icon="noto-v1:sun-with-face"
+                            data-inline="false"
+                            style={{
+                                display: "block",
+                                height: "100%",
+                                fontSize: 25,
+                                textAlign: "end",
+                                marginLeft: "10px",
+                                color: "#353239"
+                            }}
+                        />
+                    }
+                    id="icon-switch"
+                />
             </div>
-          </div>
-        </div>
-      </header>
+
+            <div className="row aligner" style={{height: '100%'}}>
+                <div className="col-md-12">
+                    <div>
+
+                        <br/>
+
+                        <h1 className="mb-0">
+                            <Typical steps={[name]} wrapper="p"/>
+                        </h1>
+
+                        <div className="title-container">
+                            <Typical className="title-styles" steps={titles} loop={50}/>
+                        </div>
+
+                        <div style={{marginTop: '1rem'}}>
+                            <a
+                                href={`${process.env.PUBLIC_URL}/resume_laura.pdf`}
+                                download="resume_laura.pdf"
+                                // Tu peux cumuler les classes Bootstrap (btn, btn-primary, btn-lg, etc.)
+                                // et ta propre classe si besoin
+                                className="btn btn-success btn-lg d-inline-flex align-items-center gap-2 cv-download-button"
+                            >
+                                <span
+                                    role="img"
+                                    aria-label="Paper icon"
+                                    style={{fontSize: '1.25rem'}}
+                                    className ="mr-2"
+                                >
+                                  📄
+                                </span>
+                                Télécharger mon CV
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
     );
-  }
 }
 
 export default Header;

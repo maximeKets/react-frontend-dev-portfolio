@@ -7,11 +7,6 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import AnimatedCursor from "react-animated-cursor"
-import {getRandomEmoji} from "./components/mouse_animation"
-
-
-
 
 
 class App extends Component {
@@ -25,7 +20,6 @@ class App extends Component {
             sharedData: {},
         };
     }
-
 
 
     componentDidMount() {
@@ -65,13 +59,6 @@ class App extends Component {
     render() {
         return (
             <>
-                <AnimatedCursor
-                    customInnerCursor={
-                        <span style={{fontSize: '24px'}}>
-              {getRandomEmoji()}
-            </span>
-                    }
-                />
                 <div>
                     <Header sharedData={this.state.sharedData.basic_info}/>
                     <About
