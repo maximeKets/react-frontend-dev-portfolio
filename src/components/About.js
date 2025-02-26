@@ -3,9 +3,7 @@ import {Icon} from "@iconify/react";
 import frFlag from '@iconify/icons-twemoji/flag-france';
 import beFlag from '@iconify/icons-twemoji/flag-belgium';
 import caFlag from '@iconify/icons-twemoji/flag-canada';
-// import frFlag from '@iconify/icons-noto/flag-for-france';
-// import beFlag from '@iconify/icons-noto/flag-for-belgium';
-// import caFlag from '@iconify/icons-noto/flag-for-canada';
+
 
 
 class About extends Component {

@@ -100,7 +100,7 @@ function Header({sharedData}) {
                                 download="resume_laura.pdf"
                                 // Tu peux cumuler les classes Bootstrap (btn, btn-primary, btn-lg, etc.)
                                 // et ta propre classe si besoin
-                                className="btn btn-success btn-lg d-inline-flex align-items-center gap-2 cv-download-button"
+                                className="btn btn-dark btn-lg d-inline-flex align-items-center gap-2 cv-download-button"
                             >
                                 <span
                                     role="img"
