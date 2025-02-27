@@ -94,7 +94,7 @@ function Header({sharedData}) {
                             <Typical className="title-styles" steps={titles} loop={50}/>
                         </div>
 
-                        <div style={{marginTop: '1rem'}}>
+                        <div style={{marginTop: '3rem'}}>
                             <a
                                 href={`${process.env.PUBLIC_URL}/resume_laura.pdf`}
                                 download="resume_laura.pdf"
